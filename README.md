@@ -33,3 +33,11 @@ node v: 14.17.6
 ## agregar en el archivo tsconfig.json en "compilerOptions" la siguiente linea para acceder a archivos json desde los componentes
 
 "resolveJsonModule": true,
+
+## debemos agregr los alias l tsconfig.json debajo de "modules" par core, modules y shared
+
+"paths": {
+"@core/_": ["src/app/core/_"],
+"@modules/_": ["src/app/modules/_"],
+"@shared/_": ["src/app/shred/_"],
+},
