@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## version
+
+node v: 14.17.6
+
+## agregar en el archivo tsconfig.json en "compilerOptions" la siguiente linea para acceder a archivos json desde los componentes
+
+"resolveJsonModule": true,
