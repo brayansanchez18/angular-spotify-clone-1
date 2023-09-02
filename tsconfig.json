@@ -20,7 +20,7 @@
     "paths": {
       "@core/*": ["src/app/core/*"],
       "@modules/*": ["src/app/modules/*"],
-      "@shared/*": ["src/app/shred/*"],
+      "@shared/*": ["src/app/shared/*"],
     },
     "lib": [
       "es2018",
