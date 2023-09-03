@@ -2,13 +2,13 @@
   "data": [
     {
       "_id": 1,
-      "name": "Getting Over",
-      "album": "One Love",
-      "cover": "https://jenesaispop.com/wp-content/uploads/2009/09/guetta_onelove.jpg",
+      "name": "Cumpliendo mi meta",
+      "album": "Cumpliendo mi meta",
+      "cover": "https://i.scdn.co/image/ab67616d0000b27357d0b7fe9f291d0ec0efecda",
       "artist": {
-        "name": "David Guetta",
-        "nickname": "David Guetta",
-        "nationality": "FR"
+        "name": "Chikano Jcr",
+        "nickname": "Chikano Jcr",
+        "nationality": "MX"
       },
       "duration": {
         "start": 0,
@@ -18,13 +18,13 @@
     },
     {
       "_id": 2,
-      "name": "Snow Tha Product || BZRP Music Sessions #39",
-      "album": "BZRP Music Sessions",
-      "cover": "https://is5-ssl.mzstatic.com/image/thumb/Features125/v4/9c/b9/d0/9cb9d017-fcf6-28c6-81d0-e9ac5b0f359e/pr_source.png/800x800cc.jpg",
+      "name": "Prendela",
+      "album": "Prendela",
+      "cover": "https://cdns-images.dzcdn.net/images/cover/0db24bdd398545626d43ba274a77f0e6/500x500.jpg",
       "artist": {
-        "name": "Snow",
-        "nickname": "Snow",
-        "nationality": "US"
+        "name": "Under Side 821",
+        "nickname": "Under Side 821",
+        "nationality": "MX"
       },
       "duration": {
         "start": 0,
@@ -34,13 +34,13 @@
     },
     {
       "_id": 3,
-      "name": "Calypso (Original Mix)",
-      "album": "Round Table Knights",
-      "cover": "https://cdns-images.dzcdn.net/images/cover/1db3f8f185e68f26feaf0b9d72ff1645/350x350.jpg",
+      "name": "A ti te da besitos",
+      "album": "Golpe Avisa",
+      "cover": "https://m.media-amazon.com/images/I/81dbCkKRs3L._UF894,1000_QL80_.jpg",
       "artist": {
-        "name": "Round Table Knights",
-        "nickname": "Round Table Knights",
-        "nationality": "US"
+        "name": "Cartel de Santa",
+        "nickname": "Cartel de Santa",
+        "nationality": "MX"
       },
       "duration": {
         "start": 0,
@@ -50,13 +50,13 @@
     },
     {
       "_id": 4,
-      "name": "Bad Habits",
-      "album": "Ed Sheeran",
-      "cover": "https://www.lahiguera.net/musicalia/artistas/ed_sheeran/disco/11372/tema/25301/ed_sheeran_bad_habits-portada.jpg",
+      "name": "Pajaros en el alambre",
+      "album": "Trap y no llores",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b4/1f/6e/b41f6ec5-e8f7-e91d-ba2c-7290d17b1e90/195497366866.jpg/1200x1200bf-60.jpg",
       "artist": {
-        "name": "Ed Sheeran",
-        "nickname": "Ed Sheeran",
-        "nationality": "UK"
+        "name": "Millonario",
+        "nickname": "Millonario",
+        "nationality": "MX"
       },
       "duration": {
         "start": 0,
@@ -66,13 +66,13 @@
     },
     {
       "_id": 5,
-      "name": "BEBE (Official Video)",
-      "album": "Giolì & Assia",
-      "cover": "https://i.scdn.co/image/ab67616d0000b27345ca41b0d2352242c7c9d4bc",
+      "name": "Burbujas de cristal",
+      "album": "Burbujas de cristal",
+      "cover": "https://i1.sndcdn.com/artworks-wyJTC93vc4Ezdyxy-RHPpuw-t500x500.jpg",
       "artist": {
-        "name": "Giolì & Assia",
-        "nickname": "Giolì & Assia",
-        "nationality": "IT"
+        "name": "Cartel de Santa ft. Millonario",
+        "nickname": "Cartel de Santa ft. Millonario",
+        "nationality": "MX"
       },
       "duration": {
         "start": 0,
@@ -82,13 +82,13 @@
     },
     {
       "_id": 6,
-      "name": "T.N.T. (Live At River Plate, December 2009)",
-      "album": "AC/DC",
-      "cover": "https://cdns-images.dzcdn.net/images/cover/ba5eaf2f3a49768164d0728b7ba64372/500x500.jpg",
+      "name": "Shorty Party",
+      "album": "Shorty Party",
+      "cover": "https://cdns-images.dzcdn.net/images/cover/aa59c5e82fd29b63238c98f5c9c25268/500x500.jpg",
       "artist": {
-        "name": "AC/DC",
-        "nickname": "AC/DC",
-        "nationality": "US"
+        "name": "Cartel de Santa",
+        "nickname": "Cartel de Santa",
+        "nationality": "MX"
       },
       "duration": {
         "start": 0,
@@ -98,13 +98,13 @@
     },
     {
       "_id": 7,
-      "name": "50 Cent - Candy Shop (feat. Olivia)",
-      "album": "50 Cent",
-      "cover": "https://i.scdn.co/image/ab67616d0000b27391f7222996c531b981e7bb3d",
+      "name": "Rayas de Patron",
+      "album": "Soy la Bomba",
+      "cover": "https://source.boomplaymusic.com/group10/M00/03/21/59a2173be2ef42b28ae72a5bd1d47883_320_320.jpg",
       "artist": {
-        "name": "50 Cent",
-        "nickname": "50 Cent",
-        "nationality": "US"
+        "name": "Millonario",
+        "nickname": "Millonario",
+        "nationality": "MX"
       },
       "duration": {
         "start": 0,
@@ -114,13 +114,13 @@
     },
     {
       "_id": 8,
-      "name": "Bésame💋",
-      "album": "Valentino Ft MTZ Manuel Turizo (Video Oficial)",
-      "cover": "https://i1.sndcdn.com/artworks-000247627460-1hqnjr-t500x500.jpg",
+      "name": "Bien Grifo",
+      "album": "Bien Grifo",
+      "cover": "https://i.scdn.co/image/ab67616d0000b273cd8242033c7ac8b897f78b6f    ",
       "artist": {
-        "name": "Valentino",
-        "nickname": "Valentino",
-        "nationality": "CO"
+        "name": "Lexx Doblex`s",
+        "nickname": "Lexx Doblex`s",
+        "nationality": "MX"
       },
       "duration": {
         "start": 0,

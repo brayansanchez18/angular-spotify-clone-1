@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TrackModel } from '@core/models/tracks.model';
 
 @Component({
   selector: 'app-media-player',
@@ -6,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./media-player.component.css'],
 })
 export class MediaPlayerComponent implements OnInit {
-  mockCover: any = {
+  mockCover: TrackModel = {
+    _id: 7,
+    name: 'Rayas de Patron',
+    album: 'Soy la Bomba',
     cover:
-      'https://jenesaispop.com/wp-content/uploads/2009/09/guetta_onelove.jpg',
-    album: 'One Love',
-    name: 'Getting Over',
+      'https://source.boomplaymusic.com/group10/M00/03/21/59a2173be2ef42b28ae72a5bd1d47883_320_320.jpg',
+    url: 'http://loclocalhost/track.mp3',
   };
 
   constructor() {}
