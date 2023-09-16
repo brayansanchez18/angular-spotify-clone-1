@@ -13,28 +13,13 @@ export class TrackPageComponent implements OnInit {
   tracksRandom: Array<TrackModel> = [];
   listObservers$: Array<Subscription> = [];
 
-  constructor(private TrackService: TrackService) {}
+  constructor(private trackService: TrackService) {}
 
   ngOnInit(): void {
-    const observer1$ = this.TrackService.dataTracksTrending$.subscribe(
-      (response) => {
-        this.tracksTrending = response;
-        this.tracksRandom = response;
-        //console.log('canciones trending---> ' + response);
-      }
-    );
-    const observer2$ = this.TrackService.dataTracksRandom$.subscribe(
-      (response) => {
-        // concatenmos las canciones entrantes con las que ya existen
-        this.tracksRandom = [...this.tracksRandom, ...response];
-        //console.log('canciones random---> ' + response);
-      }
-    );
-
-    this.listObservers$ = [observer1$, observer2$];
+    this.trackService.getAllTracks$().subscribe((response) => {
+      console.log(response);
+    });
   }
 
-  ngOnDestroy(): void {
-    this.listObservers$.forEach((u) => u.unsubscribe());
-  }
+  ngOnDestroy(): void {}
 }
