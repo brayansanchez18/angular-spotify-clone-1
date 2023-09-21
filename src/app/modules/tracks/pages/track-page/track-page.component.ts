@@ -16,8 +16,14 @@ export class TrackPageComponent implements OnInit {
   constructor(private trackService: TrackService) {}
 
   ngOnInit(): void {
-    this.trackService.getAllTracks$().subscribe((response) => {
-      console.log(response);
+    this.trackService.getAllTracks$().subscribe((response: TrackModel[]) => {
+      // console.log(response);
+      this.tracksTrending = response;
+    });
+
+    this.trackService.getAllRandom$().subscribe((response: TrackModel[]) => {
+      // console.log(response);
+      this.tracksRandom = response;
     });
   }
 
