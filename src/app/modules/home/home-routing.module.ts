@@ -20,6 +20,10 @@ const routes: Routes = [
     loadChildren: () =>
       import('@modules/history/history.module').then((m) => m.HistoryModule),
   },
+  {
+    path: '**', //TODO: 404 redirecciona a tracks
+    redirectTo: '/tracks',
+  },
 ];
 
 @NgModule({
