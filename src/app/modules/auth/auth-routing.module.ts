@@ -10,7 +10,7 @@ const routes: Routes = [
   {
     //TODO: redireccionamos desde las rutas
     path: '**',
-    redirectTo: 'auth/login',
+    redirectTo: '/auth/login',
   },
 ];
 
