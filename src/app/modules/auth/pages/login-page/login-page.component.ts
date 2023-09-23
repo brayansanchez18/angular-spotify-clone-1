@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthService } from '@modules/auth/services/auth.service';
 import { CookieService } from 'ngx-cookie-service';
 
@@ -14,7 +15,8 @@ export class LoginPageComponent implements OnInit {
 
   constructor(
     private asAuthService: AuthService,
-    private cookie: CookieService
+    private cookie: CookieService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -40,6 +42,7 @@ export class LoginPageComponent implements OnInit {
         const { tokenSession, data } = responseOk;
         // le deimo que la cookie se va a llamar token de tokensessison, que va a durar 4 diass y que va a ser para toda la aplicacion
         this.cookie.set('token', tokenSession, 4, '/');
+        this.router.navigate(['/', 'tracks']);
       },
       (err) => {
         //TODO: error de inicio de sesion
