@@ -101,4 +101,15 @@ export class MultimediaService {
   public togglePlayer(): void {
     this.audio.paused ? this.audio.play() : this.audio.pause();
   }
+
+  public seekAudio(percentage: number): void {
+    const { duration } = this.audio;
+    console.log(`duracion: ${duration}, percentage: ${percentage}`);
+    // 100% -> 200 seg
+    // 73%  -> (x)
+    // regla de 3 para saber el porcentaje de la cancion
+    const percentageToSecond = (percentage * duration) / 100;
+    // console.log(percentageToSecond);
+    this.audio.currentTime = percentageToSecond;
+  }
 }
