@@ -9,10 +9,14 @@ import { MultimediaService } from '@shared/services/multimedia.service';
 })
 export class MediaPlayerComponent implements OnInit, OnDestroy {
   listObservers$: Array<any> = [];
-
+  state: string = 'paused';
   constructor(public multimediaservice: MultimediaService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    const observer1$ = this.multimediaservice.playerStatus$.subscribe(
+      (status) => (this.state = status)
+    );
+  }
 
   ngOnDestroy(): void {
     this.listObservers$.forEach((u) => u.unsubscribe());

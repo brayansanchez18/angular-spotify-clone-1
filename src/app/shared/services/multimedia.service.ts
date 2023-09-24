@@ -13,6 +13,7 @@ export class MultimediaService {
   public timeRemaining$: BehaviorSubject<string> = new BehaviorSubject(
     '-00:00'
   );
+  public playerStatus$: BehaviorSubject<string> = new BehaviorSubject('paused');
 
   constructor() {
     this.audio = new Audio();
@@ -27,12 +28,34 @@ export class MultimediaService {
 
   private listenAllEvents(): void {
     this.audio.addEventListener('timeupdate', this.calculateTime, false);
+    this.audio.addEventListener('playing', this.setPlayerStatus, false);
+    this.audio.addEventListener('play', this.setPlayerStatus, false);
+    this.audio.addEventListener('pause', this.setPlayerStatus, false);
+    this.audio.addEventListener('ended', this.setPlayerStatus, false);
   }
 
+  private setPlayerStatus = (state: any) => {
+    // console.log('estado', state);
+    switch (state.type) {
+      case 'play':
+        this.playerStatus$.next('play');
+        break;
+      case 'playing':
+        this.playerStatus$.next('playing');
+        break;
+      case 'ended':
+        this.playerStatus$.next('ended');
+        break;
+      default:
+        this.playerStatus$.next('paused');
+        break;
+    }
+  };
+
   private calculateTime = () => {
-    console.log('dusparando evento');
+    // console.log('dusparando evento');
     const { duration, currentTime } = this.audio;
-    console.table([duration, currentTime]);
+    // console.table([duration, currentTime]);
     this.setTimeElapsed(currentTime);
     this.setRemaining(currentTime, duration);
   };
@@ -61,9 +84,13 @@ export class MultimediaService {
 
   //TODO: funciones publicas
   public setAudio(track: TrackModel): void {
-    console.log('ok', track);
+    // console.log('ok', track);
     this.audio.src = track.url;
-    console.log(this.audio.src);
+    // console.log(this.audio.src);
     this.audio.play();
+  }
+
+  public togglePlayer(): void {
+    this.audio.paused ? this.audio.play() : this.audio.pause();
   }
 }
