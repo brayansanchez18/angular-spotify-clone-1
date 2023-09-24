@@ -49,11 +49,11 @@
       </button>
     </div>
     <div class="media-linetime">
-      <div class="time">00</div>
+      <div class="time">{{ multimediaservice.timeElapsed$ | async }}</div>
       <span #progressBar class="time-progress">
         <span class="time-progress-live" [style.width]="10 + '%'"> </span>
       </span>
-      <div class="time">{{ 99 }}</div>
+      <div class="time">{{ multimediaservice.timeRemaining$ | async }}</div>
     </div>
   </div>
 </ng-template>
